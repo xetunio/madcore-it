@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madcore IT | Инженерные решения в Актау</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --accent: #f97316;
+            --accent-hover: #ea580c;
+            --border: #e2e8f0;
+            --shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Шапка */
+        header {
+            text-align: center;
+            padding: 40px 0 30px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #fff7ed;
+            color: var(--accent);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            border: 1px solid #ffedd5;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--text-main);
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* Секции */
+        section {
+            margin: 40px 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-main);
+            letter-spacing: -0.3px;
+        }
+
+        /* Карточки */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        @media(min-width: 650px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: #cbd5e1;
+        }
+
+        .card h3 {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* Блок связи */
+        .contact-box {
+            background: var(--text-main);
+            color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 24px;
+            text-align: center;
+            margin-top: 50px;
+            box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.2);
+        }
+
+        .contact-box h2 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .contact-box p {
+            color: #94a3b8;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 360px;
+            margin: 0 auto;
+        }
+
+        @media(min-width: 500px) {
+            .buttons {
+                flex-direction: row;
+            }
+        }
+
+        .btn {
+            flex: 1;
+            padding: 14px 20px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 14px;
+            text-decoration: none;
+            transition: opacity 0.2s, transform 0.2s;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: #ffffff;
+        }
+
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+
+        /* Футер */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        
+        <header>
+            <div class="badge">MADCORE IT • АКТАУ</div>
+            <h1>Надежные IT-решения и сети</h1>
+            <div class="subtitle">Профессиональный монтаж, обслуживание и ремонт техники</div>
+        </header>
+
+        <!-- Услуги -->
+        <section>
+            <h2>Что я делаю</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>🔌 Интернет и Сети</h3>
+                    <p>Прокладка кабелей, аккуратная обжимка, монтаж локальных сетей (LAN) и настройка роутеров.</p>
+                </div>
+                <div class="card">
+                    <h3>📹 Видеонаблюдение</h3>
+                    <p>Установка систем безопасности для дома и бизнеса с доступом и просмотром с телефона.</p>
+                </div>
+                <div class="card">
+                    <h3>💻 Ремонт и ПК</h3>
+                    <p>Глубокая чистка от пыли, замена термопасты, установка софта и операционные системы.</p>
+                </div>
+                <div class="card">
+                    <h3>🛠 Обслуживание</h3>
+                    <p>Техническая поддержка инфраструктуры, быстрое устранение аварий и сбоев.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Портфолио -->
+        <section>
+            <h2>Избранные проекты</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>🏢 Бизнес-центр</h3>
+                    <p>Монтаж и коммутация полноценной кабельной трассы для офисного центра.</p>
+                </div>
+                <div class="card">
+                    <h3>📷 Системы охраны</h3>
+                    <p>Установка уличных камер и настройка видеорегистратора на объекте.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <div class="contact-box">
+            <h2>Обсудим задачу?</h2>
+            <p>Напишите мне в мессенджер, отвечу на вопросы и сориентирую по срокам.</p>
+            <div class="buttons">
+                <a href="https://wa.me/77762720996" class="btn btn-primary" target="_blank">WhatsApp</a>
+                <a href="https://t.me/твой_тег" class="btn btn-secondary" target="_blank">Telegram</a>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 Madcore IT. Все права защищены.
+        </footer>
+
+    </div>
+
+</body>
+</html>
